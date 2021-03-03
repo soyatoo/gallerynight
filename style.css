@@ -18,10 +18,8 @@ body {
 }
 #content {
     margin: auto;
-    padding: 50px 20px 100px 20px;
+    padding: 20px;
     width: 50%;
-    background-color: #fff;
-    border-radius: 12px;
 }
 #contentBody {
     width: 80%;
@@ -75,7 +73,7 @@ body {
 
     #content {
         top: 80px;
-        width: 75%;
+        width: 80%;
         left: 24%;
     }
     
