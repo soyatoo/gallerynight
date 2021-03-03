@@ -1,9 +1,7 @@
 /* Structure */
-
 body {
 	background-color: #fff;
 }
-
 .wrapper {
   display: block;
   overflow-y: scroll;
@@ -16,61 +14,38 @@ body {
   background-image: url(https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
 }
-
-#footer {
-    position: fixed;
-    bottom: 40px;
-    z-index: 0;
-}
-
-.center {
-    text-align: center;
-}
-
 #content {
     margin: auto;
-    padding: 50px 0px 100px 0px;
-    width: 40%;
+    padding: 50px 20px 100px 20px;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 12px;
 }
-
-#content img {
-    max-width: 100%;
-}
-
 #contentBody {
     width: 80%;
 }
-
 /* Chonks */
-
 .chunk {
     padding: 20px 0px 20px 0px;
 }
-
 .smallChunk {
     padding: 8px 0px 8px 0px;
 }
-
 .largeChunk {
     padding: 40px 0px 40px 0px;
 }
-
 .halfChonk {
     display: flex;
 }
-
 .halfChonk > div {
     flex: 1;
     padding: 20px 24px 20px 0px;
 }
-
 /* Responsive Rules */
-
 /* Tablet */
-
 @media only screen and (max-width: 768px) {     
-
     #content {
         left: 200px;
         width: 75%;
@@ -79,6 +54,7 @@ body {
     .sidebar a {
         font-size: 16px;
     }
+
 }
 
 /* Mobile */
@@ -107,7 +83,6 @@ body {
         display: initial;
         width: 100%;
     }
-
     .halfChonk > div {
         padding: 20px 0px 20px 0px;
     }
