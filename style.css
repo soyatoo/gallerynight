@@ -20,6 +20,7 @@ body {
     margin: auto;
     padding: 30px;
     width: 50%;
+    text-align: center;
 }
 
 #contentBody {
@@ -85,7 +86,7 @@ body {
 
     #content {
         top: 80px;
-        width: 75%;
+        width: 80%;
         left: 24%;
     }
     
