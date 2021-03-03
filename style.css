@@ -13,9 +13,6 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  background-image: url(https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);
-  background-size: cover;
-  background-repeat: no-repeat;
   text-align: center;
 }
 
@@ -30,16 +27,20 @@ body {
 }
 
 #overlay {
-    position: fixed; /* Sit on top of the page content */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    background-image: url("https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   }
 
 /* Chonks */
