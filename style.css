@@ -1,0 +1,112 @@
+/* Structure */
+
+body {
+	background-color: #fff;
+}
+
+.wrapper {
+  display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#footer {
+    position: fixed;
+    bottom: 40px;
+    z-index: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+#content {
+    margin: auto;
+    padding: 50px 0px 100px 0px;
+    width: 40%;
+}
+
+#content img {
+    max-width: 100%;
+}
+
+#contentBody {
+    width: 80%;
+}
+
+/* Chonks */
+
+.chunk {
+    padding: 20px 0px 20px 0px;
+}
+
+.smallChunk {
+    padding: 8px 0px 8px 0px;
+}
+
+.largeChunk {
+    padding: 40px 0px 40px 0px;
+}
+
+.halfChonk {
+    display: flex;
+}
+
+.halfChonk > div {
+    flex: 1;
+    padding: 20px 24px 20px 0px;
+}
+
+/* Responsive Rules */
+
+/* Tablet */
+
+@media only screen and (max-width: 768px) {     
+
+    #content {
+        left: 200px;
+        width: 75%;
+    }
+
+    .sidebar a {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 400px) {
+    .sidebar, #menu {
+        top: 80px;
+    }
+
+    .sidebar {
+        display: initial;
+        left: 6%;
+    }
+
+    #navRes {
+        visibility: collapse;
+    }
+
+    #content {
+        top: 80px;
+        width: 75%;
+        left: 24%;
+    }
+    
+    .halfChonk {
+        display: initial;
+        width: 100%;
+    }
+
+    .halfChonk > div {
+        padding: 20px 0px 20px 0px;
+    }
+    
+}
