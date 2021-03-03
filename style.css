@@ -4,6 +4,14 @@ body {
 	background-color: #fff;
 }
 
+p {
+    color: #fff;
+}
+
+a {
+    color:blueviolet;
+}
+
 .wrapper {
   display: block;
   overflow-y: scroll;
@@ -14,11 +22,11 @@ body {
   top: 0;
   bottom: 0;
   text-align: center;
+  background-color:black;
 }
 
 #content {
     margin: auto;
-    padding: 20px;
     width: 50%;
     text-align: center;
 }
