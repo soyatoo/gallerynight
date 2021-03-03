@@ -1,15 +1,7 @@
 /* Structure */
 
 body {
-	background-color: #000;
-}
-
-p {
-    color: #fff;
-}
-
-a {
-    color:blueviolet;
+	background-color: #fff;
 }
 
 .wrapper {
@@ -21,39 +13,34 @@ a {
   right: 0;
   top: 0;
   bottom: 0;
-  text-align: center;
-  background-image: url("https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#footer {
+    position: fixed;
+    bottom: 40px;
     z-index: 0;
+}
+
+.center {
+    text-align: center;
 }
 
 #content {
     margin: auto;
-    width: 50%;
-    text-align: center;
+    padding: 50px 0px 100px 0px;
+    width: 40%;
+}
+
+#content img {
+    max-width: 100%;
 }
 
 #contentBody {
     width: 80%;
 }
-
-#overlay {
-    background-image: url("https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
-    background-size: cover;
-    background-repeat: no-repeat;
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
 
 /* Chonks */
 
@@ -89,15 +76,30 @@ a {
         width: 75%;
     }
 
+    .sidebar a {
+        font-size: 16px;
+    }
 }
 
 /* Mobile */
 
 @media only screen and (max-width: 400px) {
+    .sidebar, #menu {
+        top: 80px;
+    }
+
+    .sidebar {
+        display: initial;
+        left: 6%;
+    }
+
+    #navRes {
+        visibility: collapse;
+    }
 
     #content {
         top: 80px;
-        width: 90%;
+        width: 75%;
         left: 24%;
     }
     
