@@ -64,27 +64,12 @@ body {
         left: 200px;
         width: 75%;
     }
-
-    .sidebar a {
-        font-size: 16px;
-    }
+    
 }
 
 /* Mobile */
 
 @media only screen and (max-width: 400px) {
-    .sidebar, #menu {
-        top: 80px;
-    }
-
-    .sidebar {
-        display: initial;
-        left: 6%;
-    }
-
-    #navRes {
-        visibility: collapse;
-    }
 
     #content {
         top: 80px;
